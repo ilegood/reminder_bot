@@ -7,7 +7,7 @@ import json
 import os
 
 # ── 설정 ──────────────────────────────────────────────
-TOKEN = "여기에_봇_토큰_입력"
+TOKEN = os.environ.get("TOKEN", "")
 DATA_FILE = "bot_data.json"
 KST = pytz.timezone("Asia/Seoul")
 
